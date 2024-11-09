@@ -258,18 +258,24 @@
      <section class="updates">
       <div class="container updates-container">
         <div class="updates-header">
-          <h2></h2>
-          <p></p>
+          <h2>Get Hotsauce updates</h2>
+          <p>Join us next year for more visionary keynotes, peer-led roundtables, Hotjar masterclasses, and
+            new connections. Be the first to learn about HOTSAUCE 2024 by subscribing to our newsletter.</p>
           <img src="" alt="">
         </div>
         <div class="updates-form">
           <form action="post">
-            <input type="text" name="first-name" id="first-name">
+            <div class="updates-form__inputs">
+            <input type="text" class="updates-form__input" name="first-name" id="first-name">
             <label for="first-name">First name <span class="important-mark">*</span></label>
-            <input type="text" name="last-name" id="last-name">
+            <input type="text" class="updates-form__input" name="last-name" id="last-name">
             <label for="last-name">Last name <span class="important-mark">*</span></label>
-            <input type="email" name="user-email" id="user-email">
+            <input type="email" class="updates-form__input" name="user-email" id="user-email">
             <label for="user-email">Email <span class="important-mark">*</span></label>
+            </div>
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox">By checking this box, you agree to our End User Terms and Privacy Policy.</label>
+            <button type="submit">Sing me up</button>
           </form>
         </div>
       </div>

@@ -491,6 +491,7 @@ margin-top: 20px;
     
 }
 .insights-block h3{
+    text-transform: uppercase;
     font-family: Inter;
     font-size: 25.42px;
     font-weight: 900;
@@ -528,6 +529,7 @@ margin-top: 20px;
     padding: 0px 17.73px 5px 12px;
 }
 .cta-yellow-bg h3{
+    text-transform: uppercase;
     font-family: Inter;
     font-size: 25.84px;
     font-weight: 900;
@@ -542,6 +544,8 @@ margin-top: 20px;
     text-align: left;
 }
 .cta-yellow-bg button{
+    text-transform: uppercase;
+    font-weight: 800;
     width: 217.52px;
     height: 52.39px;
     top: 84.3px;
@@ -558,6 +562,106 @@ margin-top: 20px;
     background: #EAEAEA;
     color: #212529;
 }
-.updates-container{}
-.updates-header{}
-.updates-form{}
+.updates-container{
+    display: flex;
+    flex-direction: column;
+}
+.updates-header h2{
+    text-transform: uppercase;
+    font-family: Inter;
+    font-size: 47.27px;
+    font-weight: 900;
+    line-height: 50px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;    
+}
+.updates-header p{
+    font-family: Inter;
+    font-size: 17.97px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;    
+}
+.updates-form{
+    font-family: Inter;
+    font-size: 15.95px;
+    font-weight: 500;
+    line-height: 26.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.important-mark{
+    color: red;
+    font-family: Inter;
+    font-size: 15.95px;
+    font-weight: 500;
+    line-height: 26.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.updates-form__input{
+    width: 413.33px;
+    height: 62px;
+    top: 57.78px;
+    left: 324px;
+    gap: 0px;
+    border-radius: 10px;
+    opacity: 0px;
+}
+.updates-form button{
+    text-transform: uppercase;
+    width: 196.83px;
+    height: 65.19px;
+    padding: 22px 35.99px 22.19px 36.19px;
+    background: #323232;
+    border: 1px solid #323232;
+    border-radius: 1px;
+    color:#FFFFFF;    
+    font-family: Inter;
+    font-size: 18.82px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.updates-form input[type="checkbox"]{
+    width: 22.39px;
+    height: 22.39px;
+    border-radius: 5px;
+}
+.updates-form__inputs{
+    position: relative;
+    display: flex;
+}
+.updates-form__input {
+    width: 100%;
+    padding: 12px 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+
+  .updates-form__inputs label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #666;
+    transition: 0.2s ease all;
+    
+  }
+  
+
+  .updates-form__input:focus + label,
+  .updates-form__input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 8px;
+  }
