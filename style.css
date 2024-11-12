@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    border: 1px solid red;
 }
 
 body {
@@ -9,7 +10,7 @@ body {
 }
 
 .container {
-    max-width: 1272px;
+    max-width: 1272px !important;
     margin: 0 auto;
     align-items: center;
 }
@@ -409,8 +410,12 @@ margin-top: 20px;
     
 }
 .reasons{
-    padding: 200px;
-    min-height: 80vh;
+    padding: 200px 0;
+    gap: 50px;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     background: #EAEAEA;
     color: #212529;
     overflow: hidden;
@@ -464,7 +469,7 @@ margin-top: 20px;
     z-index: 0;
 }
 .insights{
-    padding: 150px;
+    padding: 150px 0;
     background: #323232;
     color: #FFFFFF;
 }
@@ -552,12 +557,7 @@ margin-top: 20px;
     font-weight: 800;
     width: 217.52px;
     height: 52.39px;
-    top: 84.3px;
-    left: 974.45px;
-    padding: 0px 31.19px 0px 31.39px;
-    gap: 0px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
+    padding: 0px 31.19px;
     border: 1px solid #FFFFFF    
 }
 .updates{
@@ -676,7 +676,8 @@ left: -210px;
 white-space: nowrap;
 }
 .join-us-video__iframe{
-    width: 90vw !important;
+    max-width: 90vw;
+    min-width: 69vw;
     height: auto;
     aspect-ratio: 16/9; 
     background-size: cover;
@@ -947,6 +948,10 @@ footer button{
     .updates-form{
         margin: 0 auto;
     }
+    .community-img{
+        height: auto;
+        width: auto;
+    }
 }
 @media screen and (max-width: 1200px) {
     .container {
@@ -980,6 +985,13 @@ footer button{
     }
     .cta-yellow-bg-text {
         width: 480px;
+    }
+    .cta-yellow-bg{
+        height: max-content;
+        background-repeat: repeat;
+    }
+    .cta-yellow-bg-section button{
+        margin: 50px 0;
     }
     .speakers ul {
         grid-template-columns: 1fr 1fr;
@@ -1039,13 +1051,15 @@ footer button{
     width: 100%;
 }
 .community-container{
+    padding: 100px 0;
+    gap: 50px;
     min-height: 50vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 .community-container img{
-width: 90vw;
+width: 100%;
 height: auto;
 margin: 0 auto;
 }
@@ -1058,11 +1072,16 @@ margin: 0 auto;
     margin: 0 auto;
     padding: 0 20px;
 }
-.reasons-container{
+.reasons{
+    padding: 100px 0;
+    gap: 50px;
     min-height: 50vh;
     display: flex;
     flex-direction: column;
-    gap: 50px 25px;
+    flex-wrap: wrap;
+}
+.reasons-text img {
+    width: 50%;
 }
 .reasons-text1{
     order:-5;
@@ -1103,6 +1122,9 @@ margin: 0 auto;
     height: auto;
     aspect-ratio: 16/9;
 }
+.join-us-text-container{
+    gap: 40px;
+}
 }
 @media screen and (max-width: 768px) {
     .container {
@@ -1118,6 +1140,9 @@ margin: 0 auto;
         width: 200px;
         height: 200px;
         top: 0;
+        left: 0;
+        width: auto;
+        position: absolute;
     }
 
     h1 {
@@ -1253,12 +1278,19 @@ margin: 0 auto;
         width: 90%;
         height: auto;
     }
+    .partnership-logos img{
+        width: auto;
+    }
     .container {
         width: 90vw;
         margin: 0 auto;
     }
     .footer-top {
-    gap: 25px;
+        justify-content: center;
+        gap: 25px;
+    }
+    .footer-bottom {
+        align-self: center;
     }
 }
 
@@ -1283,7 +1315,7 @@ margin: 0 auto;
         width: 80%;
         height: auto;
     }
-    .blcontainerock {
+    .container {
         width: 80vw;
     }
     h1, h2 {
@@ -1300,6 +1332,9 @@ margin: 0 auto;
     img, svg {
         width: 75%;
         height: auto;
+    }
+    .partnership-logos img{
+        width: 100%;
     }
     .container {
         width: 100%;
@@ -1319,6 +1354,7 @@ margin: 0 auto;
         font-size: 0.85rem;
     }
     .footer-top{
+        padding-top: 100px;
         width: 50%;
         align-self: center;
     }
